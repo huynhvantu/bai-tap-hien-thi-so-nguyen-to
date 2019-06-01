@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>số nguyên tố</title>
+</head>
+<body>
+		<script>
+			var number =parseInt(prompt("nhap mot so "))
+			var count = 0;
+			var N = 2;
+			while(count<number){
+				lasonguyento=true;
+				for(var i=2; i<=N-1;i++){
+					if(N%i==0){
+						lasonguyento=false;
+					}
+				}
+				if(lasonguyento){
+					document.write(N+',');
+					count++;
+				}
+				N++;
+			}			
+			
+		</script>
+
+</body>
+</html>
